@@ -1,0 +1,13 @@
+{
+    "name": "online-university/examination-website",
+    "description": "A PHP-based online university examination website with facial recognition MFA.",
+    "autoload": {
+        "psr-4": {
+            "OnlineUniversity\\ExaminationWebsite\\": "src/"
+        }
+    },
+    "require": {
+        "aws/aws-sdk-php": "^3.278",
+        "vlucas/phpdotenv": "^4.3"
+    }
+}

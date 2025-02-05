@@ -1,0 +1,61 @@
+Here’s a step-by-step guide to setup AWS Face Rekognition:
+
+1. AWS Setup
+1.1 Create an AWS Account
+Go to AWS Signup.
+Sign up for an account (if you don’t already have one).
+Complete identity verification and billing setup.
+
+
+---------------------------------------------------------
+
+1.2 Create an IAM User
+Go to the IAM Management Console.
+Create a new user with:
+Access type: Programmatic access.
+Permissions: Attach the policy AmazonRekognitionFullAccess and AmazonS3FullAccess.
+Download the Access Key ID and Secret Access Key.
+
+---------------------------------------------------------
+
+1.3 Create an S3 Bucket (Optional for Storing Images)
+If you want to store images in S3:
+
+Go to the S3 Management Console.
+Create a bucket:
+Set a unique name (e.g., user-images-bucket).
+Enable server-side encryption (optional but recommended for security).
+Note the bucket name for later use.
+
+---------------------------------------------------------
+
+1.4 Create a Rekognition Collection
+Use the AWS CLI or SDK to create a collection for storing indexed faces:
+
+**RUN CMD**
+aws rekognition create-collection --collection-id "user_faces"
+Replace "user_faces" with your collection name.
+Note the Collection ID for later use.
+
+---------------------------------------------------------
+
+2. Backend Development
+2.1 Setup Your Development Environment
+Webserver: Use WAMPServer or a cloud-hosted service (AWS EC2, etc.).
+Languages: Use PHP, Python, or Node.js for the backend.
+AWS SDK: Install the AWS SDK for your language.
+
+PHP: Install using Composer:
+**RUN CMD** 
+composer require aws/aws-sdk-php
+
+Python: Install via pip:
+**RUN CMD**
+pip install boto3
+
+---------------------------------------------------------
+
+
+
+
+

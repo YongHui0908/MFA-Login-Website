@@ -1,0 +1,41 @@
+Run CMD to check/delete the AWS Face Rekognition Data.
+
+1. Check the Rekognition Collection
+AWS Rekognition stores indexed faces in a Collection. If the same face is being detected as a duplicate, it means the face is already in the collection.
+
+Steps to List Indexed Faces in a Collection
+Use AWS CLI: Run the following command to list all faces in the collection:
+
+**RUN CMD:**
+aws rekognition list-faces --collection-id user_faces --region us-east-1
+
+Replace user_faces with your collection ID.
+This command will show the list of face IDs and their associated metadata.
+Inspect Results: Look at the FaceId or ExternalImageId values to see if the face has already been indexed.
+
+----------------------------------------------------------------------------------------
+
+2. Delete Faces from the Collection
+If you no longer need the face in the collection, you can delete it.
+
+Steps to Delete a Face
+Use AWS CLI:
+
+- To delete a specific face, run:
+
+**RUN CMD:**
+aws rekognition delete-faces --collection-id user_faces --face-ids "FACE_ID" --region us-east-1
+
+Replace FACE_ID with the actual Face ID from the list-faces result.
+
+- To delete multiple faces:
+
+**RUN CMD:**
+aws rekognition delete-faces --collection-id user_faces --face-ids "FACE_ID1" "FACE_ID2" --region us-east-1
+
+Clear Entire Collection (Optional): If you want to start fresh, you can delete and recreate the collection:
+
+**RUN CMD:**
+aws rekognition delete-collection --collection-id user_faces --region us-east-1
+aws rekognition create-collection --collection-id user_faces --region us-east-1
+
