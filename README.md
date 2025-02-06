@@ -13,6 +13,7 @@ Table of Contents:
 - Acknowledgments
 
 Overview
+
 The rapid shift to online education during the COVID-19 pandemic exposed the vulnerabilities of single-factor authentication methods in ensuring academic integrity. This project addresses these issues by integrating a robust MFA system that leverages facial recognition technology. The system includes secure registration, login with face verification, an examination dashboard for users, and an admin panel for managing exam modules and monitoring user activity. Data protection is enforced through AES encryption and secure key management via environment variables.
 
 Features
@@ -72,14 +73,23 @@ Usage
 
 Project Structure
 ├── assets/             # Images, logos, and static resources
+
 ├── config.php          # Database configuration file
+
 ├── vendor/             # Composer dependencies
+
 ├── .env                # Environment variables (not committed to Git)
+
 ├── .gitignore          # Files and directories to ignore
+
 ├── admin_dashboard.php # Admin panel for managing exams and user data
+
 ├── registration.php    # User registration page
+
 ├── login.php           # User login page
+
 ├── face_verification.php  # Face recognition verification page
+
 └── README.md           # This file
 
 Contributing
