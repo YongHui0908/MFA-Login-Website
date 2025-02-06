@@ -94,6 +94,7 @@ Project Structure
 └── README.md           # This file
 
 Contributing
+
 Contributions are welcome! Please fork the repository and submit your pull requests for any improvements or bug fixes.
 
 Acknowledgments
