@@ -72,24 +72,16 @@ Usage
 - Dashboard & Admin Panel: Navigate to the user examination dashboard or admin panel to access respective functionalities.
 
 Project Structure
+
 ├── assets/             # Images, logos, and static resources
-
 ├── config.php          # Database configuration file
-
 ├── vendor/             # Composer dependencies
-
 ├── .env                # Environment variables (not committed to Git)
-
 ├── .gitignore          # Files and directories to ignore
-
 ├── admin_dashboard.php # Admin panel for managing exams and user data
-
 ├── registration.php    # User registration page
-
 ├── login.php           # User login page
-
 ├── face_verification.php  # Face recognition verification page
-
 └── README.md           # This file
 
 Contributing
