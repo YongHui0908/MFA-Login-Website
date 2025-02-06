@@ -44,8 +44,8 @@ The rapid shift to online education during the COVID-19 pandemic exposed the vul
 ## Installation
 **1. Clone the Repository:**
 bash
-git clone https://github.com/yourusername/your-repository-name.git
-cd your-repository-name
+git clone https://github.com/YongHui0908/MFA-Login-Website.git
+cd MFA-Login-Website
 
 **2. Install Dependencies**
 Ensure you have Composer installed and run:
