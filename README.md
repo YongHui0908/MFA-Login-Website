@@ -11,7 +11,7 @@ This project is designed to enhance the security of online university examinatio
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [Acknowledgments](#acknowledgments)
-- - [License](#license)
+- [License](#license)
 
 ## Overview
 
